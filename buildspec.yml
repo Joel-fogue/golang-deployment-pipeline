@@ -1,12 +1,12 @@
 version: 0.1
-            
+
 phases:
 
-  install: 
+  install:
     commands:
       - go get -u github.com/golang/lint/golint
 
-  pre_build: 
+  pre_build:
     commands:
 
       # Ensure code passes all lint tests
@@ -15,6 +15,8 @@ phases:
       # Run all tests included with our application
       - go test
 
+      # Other tests would go here...
+      
   build:
     commands:
 
