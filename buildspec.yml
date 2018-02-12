@@ -16,13 +16,13 @@ phases:
       - go test
 
       # Other tests would go here...
-      
+
   build:
     commands:
 
       # Build our application
       - go build -o app
-
+ 
 artifacts:
   files:
     - app
